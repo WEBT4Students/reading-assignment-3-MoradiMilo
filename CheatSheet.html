@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Cheat Sheed</title>
+    <style>
+        .square{
+            list-style-type: square;
+        }
+        .picture{
+            list-style-type: url('my-bullet.png');
+        }
+        .roman{
+            list-style-type: upper-roman;
+        }
+        .inside{
+            list-style-position: inside;
+        }
+        .outside{
+            list-style-position: outside;
+        }
+        .red{
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        table, th, td {
+             border:1px solid black;
+        }
+        .dotted{
+            border: 1px solid black;
+            border-style: dotted;
+        }
+        .collapse{
+            border-collapse: collapse;
+        }
+    </style>
+</head> 
+
+<body>
+
+    <h1> First quiz </h1>
+
+    <h2> World Wide Web General </h2>
+    <p>  HTML, URI(URL) and HTTP made the www such succesful</p>
+    <p>  They are adressed with the URL(Uniform Resource Locator)</p>
+    <p>  The URL has 5 Components, Scheme (https://) Subdomain (www.) Second-level domain (example)
+        Top-level domain (.com) Subdirectory (/index.html/) </p>
+
+    <h2> Web Server</h2>
+    <p>  A Web Server is a computer software abd underlying hardware that accepts requests via HTTP or its secure variant HTTPS</p>
+    <p>  A web server connects to the internet and supports physical data  interchange woth other devices connected to the web. On the software side, a web server
+         included several parts that control how web users acces hosted files</p>
+    <p>  They store data on the server using some kind of database (server-side storage) then run server-side code to retieve needed
+        data, insert it into static page templates, and serve the resulting HTML to the client to be
+        displayed by the users browser </p>
+    <p> Page content refers to all the information contained in a website. Page content can be displayed
+        as text, links, images, audio, animation or videos among other things </p>
+
+    <h2> Web Client</h2>
+    <p>  A web client is an application that communicates with a web server, using Hypertext Transfer Protocol (HTTP)</p>
+    <p>  The purpose of a web browser is to fetch content from the Web or from a local storage device and display it on a user's device.</p>
+    <p>  Web Clients and Web Browsers are the same</p>
+
+    <h2> Hello World</h2>
+    <p>  The html head element is a container for metadata (data about data)</p>
+    <p>  All html documents have to start with !DOCTYPE, becouse its an information to the browser about what document to expect  </p>
+    <p>  The body and head element</p>
+    <p>  The em tag is used to define emphasized text</p>
+    <p>  With the mark element is text marked in html, it has a yellow backround colour</p>
+
+    <h1> Second quiz</h1>
+
+    <h2> HTML</h2>
+    <mark> Name the components of html elements properly </mark>
+    <p> The HTML element is everything from the start to the end tag <br> Nested elements (they can contain other elements) <br>
+        html element is the root elemnt and it defines the whole html document <br> body element defines the body 
+        <br> h element defines the heading <br> p element definess a paragraph <br> Empty elements, elements with no contend are called empty elements but we call them VOID ELEMENTS</p>
+    <mark> Identify void elements and how they are denoted</mark>
+    <p> Void elements have no contend, they are written like normal elements, for example br is a void element, it starts a new line.</p>
+    <mark> Identify attributes</mark>
+    <p> all html elements can have attributes, attributes provide additional information about elements, they are always specified in the start tag, they usually come in name/value pairs like name="value" <br>
+        there are many different attributes: <br>
+        a => hyperlink; href => url of the page <br>
+        img => embed an image; src => path to image <br>
+        img tag should contain with&height attribut, they manage the with and height of the pictrue in pixels <br>
+        alt atribut helps the img tag, for example tthe picture cant get loaded, alt wtites a text that describes the picture <br>
+        style => with this you can make styles like colour,font, size, ... <br>
+        lang => in the html tag it declares the language of the web page <br>
+        title => will be on top of your opend tabs <br>
+    </p>
+    <mark> Write down the correct DOCTYPE declaration for html 5</mark>
+    <p> "!DOCTYPE html>"</p>
+    <mark> Write down syntactically correct statements for the following elements</mark>
+    <pre>
+        Articel: article>
+        Body: &lt;body&gt;
+        line break: 
+        headings: &lt;h1 - h6&gt;
+        section with meta-information: head> 
+        top level element: html> 
+        image named Team.jpg: img src="Team.jpg"> 
+        paragraph: p> 
+        section: section> 
+        Label appearing in the title bar: title> 
+        link to other pages: a> 
+        comment: !--- this a comment ---> 
+    </pre>
+    <h2> CSS </h2>
+    <mark> Name the components of a css rule properly</mark>
+    <p> There is a Selector(h1) and then a Declaration. in the declaration, there is a proberty(color:), value(blue;), Proberty(font-size:) and  again a value(12px;)</p>
+    <mark> Use combinators properly: direct child, descendant, adjacent sibling, sibling</mark>
+    <p> descendats (einrückungen) wie Famile body alles darunter children (nested to body)    </p>
+    <p> Adjacent = es kann einzelne Zeilen bearbeiten ( #child + p = bearbeitet die erste p zeile)      Sibling = es kann jede unterordnung bearbeiten (#child ~ p = bearbeitet alle p die in body drinnen sind</p>
+    <mark> Specify colors by color names and in hexadecimal notation</mark>
+    <pre>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+
+        Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255). #ff00000 = red 6 digits
+        
+        3 Digit HEX Value #rgb (red green blue) So, if we have #ff00cc, it can be written like this: #f0c. </pre>
+    <mark> Declarations for color, background color    </mark>
+    <p> color = color:ff00000; (red) // background color = background-color:ff00000; (red) </p>
+    <mark> Pseudo classes for the a> element    </mark>
+    <pre>  "a":link all links
+
+        a:link = changes color of link
+        
+        a:visited = changes color of link to light grey when visited;
+        
+        a:hover = when courser on link (courser hovers) it will get black;</pre>
+    <mark> Declaration for background image    </mark>
+    <pre> background-image: url("paper.gif")
+
+        background-color: #cccccc;
+        
+        he background-image property sets one or more background images for an element.</pre>
+    <mark> Declaration for text alignment (left, right, center, justify, overline, underline, line-through)    </mark>
+    <pre> The text-align property is used to set the horizontal alignment of a text.
+
+        text-align: center; // text-align: left; // text-align: right;
+        
+        The text-align-last property specifies how to align the last line of a text.
+        
+        text-align-last: right; // text-align-last: center;
+        
+        he direction and unicode-bidi properties can be used to change the text direction of an element:
+        
+        direction: rtl; // unicode-bidi: bidi-override;
+        
+        The vertical-align property sets the vertical alignment of an element.
+        
+        vertical-align: baseline; // vertical-align: text-top;
+
+        text-decoration-line => Sets the kind of text decoration to use(underline, overline, line-through)
+
+        text-decoration-color => sets the color of the text decoration
+        text-decoraton-style => sets the style of the text decoartion (solid, wavy, dotted, dashed, double)
+
+        text-decooration-thicknesss => sets the thickness of the decoration line
+
+        inital => sets this proberty to its default value
+        inhert => inheits this proberty from its parent element
+    </pre>
+    <mark> Declaration for text transformation (uppercase, lowercase, capitalize)    </mark>
+    <p> The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+    <mark> Identify the difference between serif and sans-serif fonts    </mark>
+    <pre> serif have small stroke at the edges of each letter (elegance)
+
+        sans- serif have clean lines (no small strokes attached)(modern)</pre>
+    <mark> Declarations for font families    </mark>
+    <pre> he font-family property specifies the font for an element.
+
+        The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.
+        
+        two types of font family
+        
+        family-name - The name of a font-family, like "times", "courier", "arial", etc.
+        
+        generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy"</pre>
+    <mark> Declarations for font style normal and italic    </mark>
+    <pre> The font-style property is mostly used to specify italic text.
+
+        Three values
+        
+        normal - The text is shown normally
+        
+        italic - The text is shown in italics
+        
+        oblique - The text is "leaning"
+        
+        font-style: normal // font-style_ italic</pre>
+    <mark>  Declarations for font sizes    </mark>
+    <pre> Declarations for font sizes
+
+        The font-size property sets the size of the text.
+        
+        Absolute size:
+        
+        Sets the text to a specified size
+        
+        Does not allow a user to change the text size in all browsers (bad for accessibility reasons)
+        
+        Absolute size is useful when the physical size of the output is known
+        
+        Relative size:
+        
+        Sets the size relative to surrounding elements
+        
+        Allows a user to change the text size in browsers
+        
+        Set Font Size With Pixels => font-size: 40 px;
+
+        Set Font Size With Em => font-size: 2.5em; (40 px / 16 = 2.5 em)
+        
+        Use Combination Of Percent and EM => he solution that works in all browsers, is to set a default font-size in percent for the element</pre>
+    <mark> Declarations for font weights    </mark>
+    <pre> 
+        The font-weight property specifies the weight of a font (font-weight:normal) (font-weigth:bold);
+
+        The font-weight property sets how thick or thin characters in text should be displayed.
+
+        font-weight: normal; // font-weight: bold; // font-weight: 900;
+    </pre>
+
+    <h1> Third Quiz</h1>
+    <h2> HTML for lists</h2>
+    <mark> Start Tags</mark>
+    <pre> unorded list is wirtten like &lt;ul&gt;(start tag) &lt;li&gt; (each list item starts with this tag)
+
+ orded list is written like &lt;ol&gt; (start tag) &lt;li&gt; (each list item starts with this tag)
+
+ description list is written like &lt;dl&gt; (defines the description list) &lt;dt&gt;((defines the term/name) &lt;dd&gt;(describes each term)
+    </pre>
+
+    <h2> CSS for lists </h2>
+    <mark> Make bullet a square</mark>
+    <pre> code in css
+     ul.a {
+        list-style-type: square;
+      }</pre>
+      <ul>
+        <li class="square"> Coffee</li>
+        <li class="square"> Milk</li>
+        <li class="square"> Tea</li>
+      </ul>
+    <mark>Make bullet an image named "my-bullet.png"</mark>
+    <pre> code in CSS
+        .picture{
+            list-style-type: url('my-bullet.png');
+        }
+    </pre>
+    <ul>
+        <li class="pictrue"> Coffee</li>
+        <li class="pictrue"> Milk</li>
+        <li class="pictrue"> Tea</li>
+    </ul>
+    <mark> Make bullet an uppercase roman number</mark>
+    <pre>  code in CSS
+        .roman{
+        list-style-type: upper-roman;
+    }</pre>
+    <ul>
+        <li class="roman"> Coffee</li>
+        <li class="roman"> Milk</li>
+        <li class="roman"> Tea</li>
+    </ul>
+    <mark> Set bullet position to be inside the list item's text flow</mark>
+    <pre> code in CSS
+        .inside{
+            list-style-position: inside;
+        }
+    </pre>
+    <ul>
+        <li class="inside"> Coffee     ,,,,,, <br> ,,,,,,</li>
+        <li class="inside"> Milk</li>
+        <li class="inside"> Tea</li>
+    </ul>
+    <mark> Set bullet position to be outside the list item's text flow</mark>
+    <pre> code in CSS
+        .outside
+            list-style-position: outside;
+        }
+    </pre>
+    <ul>
+        <li class="outside"> Coffee     ,,,,,, <br> ,,,,,,</li>
+        <li class="outside"> Milk</li>
+        <li class="outside"> Tea</li>
+    </ul>
+    <h2> HTML for tables</h2>
+    <mark> start tags</mark>
+    <pre> table => &lt;table&gt;
+          table row => &lt;tr&gt;
+          table header => &lt;thead&gt;
+          table header cell => &lt;th&gt;
+          table body => &lt;tbody&gt;
+          table cell => &lt;td&gt;
+          table footer => &lt;tfoot&gt;
+          table footer cell => &lt;tfoot&gt;
+
+          code example:
+          &lt;table style="width:100%"&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Person 1&lt;/th&gt;
+            &lt;th&gt;Person 2&lt;/th&gt;
+            &lt;th&gt;Person 3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;  
+    </pre>
+    <table style="width:100%">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>
+    <h2> css for tables</h2>
+    <mark> balck dotted border of 1 px width</mark>
+    <pre> code in CSS
+        table, th, td{
+            border: 1px solid black;
+            border-style: dotted;
+        }
+    </pre>
+    <table class="dotted"> 
+        <tr>
+            <th> Name</th>
+            <th> Age</th>
+        </tr>
+        <tr>
+        <td> Moritz</td>
+        <td> 15</td>
+        </tr>
+        <tr>
+            <td> Nikola</td>
+            <td> 16</td>
+        </tr>
+    </table>
+    <mark> Solid border of 1 px width having a red color and rounded corners</mark>
+    <pre> code in CSS
+        .red{
+            border: 1px solid;
+            border-color: red;
+            border-radius: 5px;
+        }
+    </pre>
+    <table class="red">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>
+    <mark> Merge the borders of table cells so that they appear as one line</mark>
+    <pre>code in CSS
+        .collapse{
+            border-collapse: collapse;
+        }
+    </pre>
+    <table class="collapse">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>
+</body>
+</html>
